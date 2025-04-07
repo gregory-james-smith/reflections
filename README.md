@@ -1,2 +1,3 @@
-# reflections
-Published articles and essays
+# Reflections
+
+A collection of published articles and essays.
