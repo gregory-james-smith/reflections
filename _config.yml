@@ -28,9 +28,13 @@ url: "https://gregory-james-smith.github.io" # the base hostname & protocol for 
 github_username:  gregory-james-smith
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-pandoc
+
+# Markdown processor
+markdown: Pandoc
 
 # Exclude from processing.
 # The following items will not be processed, by default.
