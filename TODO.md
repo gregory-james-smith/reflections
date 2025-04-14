@@ -1,0 +1,3 @@
+- [ ] Rename from **Reflections** to **Aurora**
+- [ ] Install Tailwind
+- [ ] Modify CSS and HTML template
