@@ -1,3 +1,4 @@
 - [ ] Rename from **Reflections** to **Aurora**
 - [ ] Install Tailwind
 - [ ] Modify CSS and HTML template
+- [ ] Is there a way to avoid putting a date on a post? May want to change it without breaking links
