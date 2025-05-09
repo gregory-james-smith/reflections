@@ -33,19 +33,18 @@ Facebook tech stack
 
 # Structure
 
-Structure by feature... not by ??? -- therefore primary structuring is the page
-
-- src
-    - pages
-    - features
-    - components
-    - utils
-    - api
+The project should be **structured by feature** not by type or by function.
+In user interfaces this means the primary structure is around the **pages** of the user interface.
 
 | Folder | Description |
 |-|-|
-| `/src/components/` | Dumb UI components decoupled from the domain and implementation. Should really be in a separate library. |
-| `/src/features/` | UI components coupled to the domain or implementation |
+| `./src/components/` | Dumb UI components decoupled from the domain and implementation. Should really be in a separate library. |
+| `./src/features/` | UI components coupled to the domain or implementation |
+| `./src/pages/` | The pages of the web app |
+| `./src/utils/` |  |
+| `./src/api/` |  |
+
+Each component or feature 
 
 | Filename | Description |
 |-|-|
@@ -65,6 +64,8 @@ Structure by feature... not by ??? -- therefore primary structuring is the page
 * Fracturing JS bundles
 * Server side rendering
 * back referencing pattern
+* Importing SVGs etc.
+* CSS modules
 
 # Installing fonts
 
