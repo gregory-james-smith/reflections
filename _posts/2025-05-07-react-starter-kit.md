@@ -17,6 +17,9 @@ Use **Vite** to initialise the web application.
 
 # Technical stack
 
+The Facebook technical stack is recommended.
+[This article by Facebook](https://engineering.fb.com/2020/05/08/web/facebook-redesign/) discusses the reasoning behind some of their technology choices.
+
 * React
 * Typescript
 * Vite
