@@ -86,9 +86,9 @@ Typically unit tests will only be needed for utilities and some state management
 
 Lighthouse ships with and can be run in the Chrome browser or can be run headlessly in a CICD pipeline.
 
-Cypress
-
-Put code in `window`
+Sometimes when doing Cypress testing you need to access data in memory or data in a library.
+You can assign the data to the `window` object in the application and this will make it available to Cypress.
+For example, if using Chart.js you can include `window.Chart = Chart` and then the data in the chart can be tested by Cypress.
 
 # Styling
 
