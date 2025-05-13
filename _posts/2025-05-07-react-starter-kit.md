@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React starter kit
+title: Web application guide with React
 tags: draft
 ---
 
