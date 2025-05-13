@@ -11,7 +11,7 @@ This is my recommendation for how to develop a **web application**.
 The implementation is a **Single Page Application (SPA)** that loads a single HTML page and, using the React framework and JavaScript, dynamically updates the content as the user interacts with it without refreshing the entire page.
 The implementation can also support advanced features of a **Progressive Web Application (PWA)**.
 
-# Starting
+# Getting started
 
 Use **Vite** to initialise the web application.
 
@@ -38,10 +38,10 @@ In user interfaces this means the primary structure is around the **pages** of t
 
 | Folder | Description |
 |-|-|
-| `./src/components/` | Dumb UI components decoupled from the domain and implementation. Should really be in a separate library. |
-| `./src/features/` | UI components coupled to the domain or implementation |
 | `./src/pages/` | The pages of the web app |
-| `./src/utils/` |  |
+| `./src/features/` | Smart UI components coupled to the domain or implementation |
+| `./src/components/` | Dumb UI components decoupled from the domain and implementation. \\ These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
+| `./src/utils/` | Utilities |
 | `./src/api/` |  |
 
 Each component or feature should have its own folder.
@@ -53,12 +53,18 @@ There may be other parts than those illustrated here.
 | `button.ts` | The feature or component |
 | `button.hooks.ts` | React hooks specific to the feature or component |
 | `button.reducer.ts` | React reducers specific to the feature of component |
+| `button.constants.ts` | Constant values specific to the feature of component |
 | `button.modules.css` | CSS module |
 
 # State
 
-* ...
+Since this is a web application, there will be mutable state...
 
+Options...
+
+# Configuration
+
+How to...
 
 # ...
 
