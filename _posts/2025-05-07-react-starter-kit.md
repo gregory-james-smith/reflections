@@ -42,7 +42,7 @@ In user interfaces this means the primary structure is around the **pages** of t
 | `./src/features/` | Smart UI components coupled to the domain or implementation |
 | `./src/components/` | Dumb UI components decoupled from the domain and implementation. \\ These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
 | `./src/utils/` | Utilities |
-| `./src/api/` |  |
+| `./src/api/` | Functions for making API calls |
 
 Each component or feature should have its own folder.
 Its parts should be broken down into different files with the following "dot" naming convention.
