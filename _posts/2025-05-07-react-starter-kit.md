@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web application guide with React
-tags: draft
+tags: web
 ---
 
 This is my recommendation for how to develop a **web application**.
@@ -71,7 +71,31 @@ There may be other parts than those illustrated here.
 
 # Configuration
 
-How to...
+Host a small Javascript file on the same web server as the web application.
+
+```js
+window.config = {
+  data: 1
+}
+```
+
+Add the code to the head of the HTML document to run the Javascript file.
+
+```html
+<html>
+  <head>
+    <script src="/env/config.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+The source code can then access the configuration data.
+
+```ts
+const data = window.config?.data;
+```
 
 # Testing
 
