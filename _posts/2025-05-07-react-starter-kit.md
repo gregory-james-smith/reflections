@@ -58,16 +58,16 @@ There may be other parts than those illustrated here.
 
 # State
 
-Since this is a web application, there will be mutable state...
-
-Options...
-
 | State | Description |
 |-|-|
 | React hook | |
 | React reducer | |
-
-See also...
+| React context | |
+| URL parameters | |
+| Cookies | |
+| Session storage | |
+| Local storage | |
+| IndexedDB | |
 
 # Configuration
 
