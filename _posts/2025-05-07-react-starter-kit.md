@@ -40,7 +40,7 @@ In user interfaces this means the primary structure is around the **pages** of t
 |-|-|
 | `./src/pages/` | The pages of the web app |
 | `./src/features/` | Smart UI components coupled to the domain or implementation |
-| `./src/components/` | Dumb UI components decoupled from the domain and implementation. These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
+| `./src/components/` | Dumb UI components decoupled from the domain and implementation. <br /> These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
 | `./src/utils/` | Utilities |
 | `./src/api/` | Functions for making API calls |
 
@@ -99,19 +99,11 @@ Avoid using the `@apply` directive, use composition of components instead.
 
 There may sometimes be a need to use CSS, in these cases use CSS modules which work with Vite out-of-the-box.
 
+Most UI component libraries are bloated and invasive.
+You can use **shadcn** to quickly create your own components.
 
-rem
+The fonts **Inter** and **Noto** are recommended.
+They can be installed with the `@fontsource` packages.
+Self hosting this way prevents late loading of the fonts on the page.
 
-
-Most UI component libraries are bloated.
-You can use **shadcn** 
-
-* Importing SVGs etc.
-Use SVGs, not fonts... -- icons
-
-Import Inter font...
-Noto -- No TOFU
-
----
-
-
+Use SVG for icons.

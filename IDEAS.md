@@ -10,6 +10,7 @@
 * Routing
 * Importing fonts
 * Deep linking
+* How to transpile TS to old JS...
 
 ---
 
@@ -49,3 +50,12 @@ Canvas
 * Favourite fonts
 * Typescript notes
 * VSCode extensions and settings
+
+---
+
+Learning CSS properly
+rem vh vw
+https://www.reddit.com/r/Frontend/comments/sn2yns/when_to_use_rem_em_vwvh_px/
+Graphic design
+
+---
