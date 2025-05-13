@@ -20,19 +20,15 @@ Use **Vite** to initialise the web application.
 The Facebook technical stack is recommended.
 [This article by Facebook](https://engineering.fb.com/2020/05/08/web/facebook-redesign/) discusses the reasoning behind some of their technology choices.
 
-* React
-* Typescript
-* Vite
-* Tailwind
-* Vitest
-* ?? for REST
-* Apollo for GraphQL
-* WebWorkers and ??? pool
-* shadcn
-* pnpm
-
-Facebook tech stack
-* SVGs
+| Tool | Description |
+|-|-|
+| commitizen | Release management tool |
+| pnpm | Package manager |
+| Vite | Build tool |
+| Typescript | Programming language |
+| React | Web application framework |
+| Vitest | Unit test framework |
+| Tailwind | CSS framework |
 
 # Structure
 
@@ -53,7 +49,7 @@ There may be other parts than those illustrated here.
 
 | Filename | Description |
 |-|-|
-| `button.ts` | The feature or component |
+| `button.tsx` | The feature or component |
 | `button.hooks.ts` | React hooks specific to the feature or component |
 | `button.reducer.ts` | React reducers specific to the feature of component |
 | `button.constants.ts` | Constant values specific to the feature of component |
@@ -80,6 +76,7 @@ Cypress
 Tailwind
 CSS modules
 rem
+Avoid `@apply`, if you are you are trying to write traditional CSS in Tailwind, use composition instead.
 
 Most libraries are bloated...
 
@@ -91,6 +88,19 @@ Most libraries are bloated...
 * back referencing pattern
 * Importing SVGs etc.
 * CSS modules
+* Prettier / Formatting / Linter etc.
+* Routing
+* Importing fonts
+
+---
+
+* ?? for REST
+* Apollo for GraphQL
+* WebWorkers and ??? pool
+* shadcn
+
+Facebook tech stack
+* SVGs
 
 # Installing fonts
 
