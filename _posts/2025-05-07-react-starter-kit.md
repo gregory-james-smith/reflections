@@ -6,6 +6,8 @@ tags: draft
 
 This is my recommendation for how to develop a **web application**.
 
+I also recommend **MDN Web Docs** for a source of documentation.
+
 # Conceptual design
 
 The implementation is a **Single Page Application (SPA)** that loads a single HTML page and, using the React framework and JavaScript, dynamically updates the content as the user interacts with it without refreshing the entire page.
@@ -27,7 +29,6 @@ The Facebook technical stack is recommended.
 | Vite | Build tool |
 | Typescript | Programming language |
 | React | Web application framework |
-| Vitest | Unit test framework |
 | Tailwind | CSS framework |
 
 # Structure
@@ -39,7 +40,7 @@ In user interfaces this means the primary structure is around the **pages** of t
 |-|-|
 | `./src/pages/` | The pages of the web app |
 | `./src/features/` | Smart UI components coupled to the domain or implementation |
-| `./src/components/` | Dumb UI components decoupled from the domain and implementation. \\ These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
+| `./src/components/` | Dumb UI components decoupled from the domain and implementation. These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
 | `./src/utils/` | Utilities |
 | `./src/api/` | Functions for making API calls |
 
@@ -61,58 +62,56 @@ Since this is a web application, there will be mutable state...
 
 Options...
 
+| State | Description |
+|-|-|
+| React hook | |
+| React reducer | |
+
+See also...
+
 # Configuration
 
 How to...
 
-# Testing 
+# Testing
 
-`__test__`
-Lighthouse
+| Tool | Description |
+|-|-|
+| Vitest | Unit test framework |
+| Lighthouse | Non-function test tool |
+| Cypress & Cucumber | Behaviour test framework |
+
+It is customary to co-locate the unit tests in `./__test__` next to the code it is testing.
+Typically unit tests will only be needed for utilities and some state management logic, such as complex reducers.
+
+Lighthouse ships with and can be run in the Chrome browser or can be run headlessly in a CICD pipeline.
+
 Cypress
+
+Put code in `window`
 
 # Styling
 
-Tailwind
-CSS modules
+The Google **Material Design** design language should be used.
+
+Tailwind should be used for styling.
+Avoid using the `@apply` directive, use composition of components instead.
+
+There may sometimes be a need to use CSS, in these cases use CSS modules which work with Vite out-of-the-box.
+
+
 rem
-Avoid `@apply`, if you are you are trying to write traditional CSS in Tailwind, use composition instead.
 
-Most libraries are bloated...
 
-# ...
+Most UI component libraries are bloated.
+You can use **shadcn** 
 
-* Micro web apps
-* Fracturing JS bundles
-* Server side rendering
-* back referencing pattern
 * Importing SVGs etc.
-* CSS modules
-* Prettier / Formatting / Linter etc.
-* Routing
-* Importing fonts
+Use SVGs, not fonts... -- icons
+
+Import Inter font...
+Noto -- No TOFU
 
 ---
 
-* ?? for REST
-* Apollo for GraphQL
-* WebWorkers and ??? pool
-* shadcn
 
-Facebook tech stack
-* SVGs
-
-# Installing fonts
-
-# Architectural considerations
-
----
-
-Separate file
-
-* Web storage options
-    * URL params
-* WebAssembly etc.
-* UI/UX design for web
-* What is that other thing called... no JS --- JAM stack???
-* Links to Typescript config and other config...
