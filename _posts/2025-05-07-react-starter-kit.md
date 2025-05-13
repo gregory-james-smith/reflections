@@ -46,13 +46,14 @@ In user interfaces this means the primary structure is around the **pages** of t
 
 Each component or feature should have its own folder.
 Its parts should be broken down into different files with the following "dot" naming convention.
+There may be other parts than those illustrated here.
 
 | Filename | Description |
 |-|-|
-| button.ts | The feature or component |
-| button.hooks.ts | React hooks specific to the feature or component |
-| button.reducer.ts | React reducers specific to the feature of component |
-| button.modules.css | CSS module |
+| `button.ts` | The feature or component |
+| `button.hooks.ts` | React hooks specific to the feature or component |
+| `button.reducer.ts` | React reducers specific to the feature of component |
+| `button.modules.css` | CSS module |
 
 # State
 
