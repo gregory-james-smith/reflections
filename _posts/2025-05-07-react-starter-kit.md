@@ -66,6 +66,20 @@ Options...
 
 How to...
 
+# Testing 
+
+`__test__`
+Lighthouse
+Cypress
+
+# Styling
+
+Tailwind
+CSS modules
+rem
+
+Most libraries are bloated...
+
 # ...
 
 * Micro web apps
