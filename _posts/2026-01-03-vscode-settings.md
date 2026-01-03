@@ -101,3 +101,24 @@ title: VSCode settings
   }
 ]
 ```
+
+# Extensions
+
+- bierner.emojisense
+- vsls-contrib.gistfs
+- eamodio.gitlens
+- ecmel.vscode-html-css
+- torn4dom4n.latex-support
+- ritwickdey.LiveServer
+- ickc.vscode-markdown-it-pandoc
+- yzhang.markdown-all-in-one
+- bierner.markdown-emoji
+- TakumiI.markdowntable
+- analytic-signal.preview-mp4
+- donjayamanne.typescript-notebook
+- mushan.vscode-paste-image
+- esbenp.prettier-vscode
+- Gruntfuggly.todo-tree
+- ChrisChinchilla.vscode-pandoc
+- tomoki1207.pdf
+- tonybaloney.vscode-pets
