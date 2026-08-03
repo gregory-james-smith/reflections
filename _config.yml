@@ -19,22 +19,43 @@
 # in the templates via {{ site.myvariable }}.
 
 title: The Whispering Mind
-# email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   A collection of published articles and essays
-baseurl: "/reflections/" # the subpath of your site, e.g. /blog
-url: "https://gregory-james-smith.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-github_username:  gregory-james-smith
+baseurl: "/reflections/"
+url: "https://gregory-james-smith.github.io"
+github_username: gregory-james-smith
 
-# Build settings
-remote_theme: ngzhio/jekyll-theme-hamilton
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Gregory Smith
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-pandoc
 
-# Markdown processor
 markdown: Pandoc
+pandoc:
+  markdown: markdown+tex_math_dollars
+  output: html5
+
+exclude:
+  - node_modules/
+  - package-lock.json
+  - package.json
+  - tailwind.config.js
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
