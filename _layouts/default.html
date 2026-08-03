@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind-output.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-800">
+    <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-8 sm:px-6 lg:px-8">
+      <header class="mb-10 border-b border-slate-200 pb-6">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-700">Reflections</p>
+            <h1 class="text-3xl font-semibold text-slate-900 sm:text-4xl">{{ site.title }}</h1>
+            <p class="mt-2 max-w-2xl text-base text-slate-600">{{ site.description }}</p>
+          </div>
+          <nav class="flex flex-wrap gap-3 text-sm font-medium text-slate-600">
+            <a class="rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-brand-500 hover:text-brand-700" href="{{ '/' | relative_url }}">Home</a>
+            <a class="rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-brand-500 hover:text-brand-700" href="{{ '/about/' | relative_url }}">About</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        {{ content }}
+      </main>
+
+      <footer class="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500">
+        <p>© {{ 'now' | date: '%Y' }} {{ site.title }}. Built with Jekyll and Tailwind.</p>
+      </footer>
+    </div>
+  </body>
+</html>

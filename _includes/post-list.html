@@ -1,0 +1,13 @@
+<ul class="space-y-4">
+  {% for post in site.posts %}
+    <li class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <a class="block" href="{{ post.url | relative_url }}">
+        <p class="text-sm font-medium text-brand-700">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h2 class="mt-1 text-xl font-semibold text-slate-900">{{ post.title }}</h2>
+        {% if post.excerpt %}
+          <p class="mt-2 text-sm leading-6 text-slate-600">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
