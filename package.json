@@ -1,0 +1,10 @@
+{
+  "name": "reflections-site",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind-output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
