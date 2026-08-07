@@ -1,15 +1,15 @@
 
-  <aside class="lg:w-64 lg:flex-shrink-0 border-r border-neutral-200 pr-6">
+  <aside class="lg:w-64 lg:flex-shrink-0 border-r border-subtle pr-6">
 
     <h2 class="text-sm uppercase tracking-wider font-semibold mb-4 text-neutral-600">
       All Posts
     </h2>
 
-    <ul class="space-y-2 text-sm leading-tight">
+    <ul class="space-y-2 text-xs leading-tight">
       {% for post in site.posts %}
       <li>
         <a href="{{ post.url | relative_url }}"
-           class="block py-1 hover:text-neutral-500 transition">
+           class="block text-color-tertiary hover:text-color-secondary transition">
           {{ post.title }}
         </a>
       </li>
