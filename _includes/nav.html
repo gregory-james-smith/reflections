@@ -1,0 +1,28 @@
+<nav class="w-full h-11 surface-base flex flex-row justify-center items-stretch contents-center px-6">
+  <div
+    class="flex-1 max-w-screen-md h-full flex flex-row justify-between items-center contents-center gap-8"
+  >
+    <a
+      href="{{ '/' | relative_url }}"
+      class="text-xs font-semibold text-colour-primary"
+    >
+      {{ site.title }}
+    </a>
+
+    <a
+      href="{{ '/' | relative_url }}"
+      class="text-xs font-normal text-color-tertiary hover:text-color-secondary transition"
+      >Home</a
+    >
+    <a
+      href="{{ '/about/' | relative_url }}"
+      class="text-xs font-normal text-color-tertiary hover:text-color-secondary transition"
+      >About</a
+    >
+    <a
+      href="{{ '/posts/' | relative_url }}"
+      class="text-xs font-normal text-color-tertiary hover:text-color-secondary transition"
+      >Posts</a
+    >
+  </div>
+</nav>
