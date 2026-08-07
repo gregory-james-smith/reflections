@@ -7,9 +7,56 @@
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply antialiased;
 }
 
 .prose a {
   @apply text-sky-700 underline decoration-sky-400 decoration-2 underline-offset-2 transition-colors duration-200 hover:text-sky-900;
+}
+
+/* 
+ * Use opacity in light mode
+ * Use solid colours in dark mode
+ */
+
+@layer utilities {
+  .text-color-primary {
+    @apply text-black dark:text-white;
+  }
+
+  .text-color-secondary {
+    @apply text-black/88 dark:text-zinc-300;
+  }
+
+  .text-color-tertiary {
+    @apply text-black/72 dark:text-zinc-500;
+  }
+
+  .text-color-quaternary {
+    @apply text-black/56 dark:text-zinc-600;
+  }
+
+  .surface-base {
+    @apply bg-white dark:bg-zinc-900;
+  }
+
+  .surface-raised {
+    @apply bg-zinc-100 dark:bg-zinc-800;
+  }
+
+  .surface-overlay {
+    @apply bg-zinc-200 dark:bg-zinc-700;
+  }
+
+  .border-subtle {
+    @apply border-zinc-200 dark:border-zinc-700;
+  }
+
+  .border-medium {
+    @apply border-zinc-300 dark:border-zinc-600;
+  }
+
+  .border-strong {
+    @apply border-zinc-400 dark:border-zinc-500;
+  }
 }
