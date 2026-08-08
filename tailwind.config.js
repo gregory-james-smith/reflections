@@ -37,6 +37,17 @@ module.exports = {
   exclude: ["node_modules"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "Inter", // Inter Variable
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Helvetica Neue"',
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
       typography: {
         DEFAULT: {
           css: {
