@@ -5,6 +5,7 @@ title: Favourite fonts
 
 # Sans serif
 
+- [Inter](https://rsms.me/inter/)
 - [Geist](https://vercel.com/font)
 
 # Garamond
