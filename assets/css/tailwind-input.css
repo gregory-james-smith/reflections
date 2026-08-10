@@ -10,10 +10,6 @@ body {
   @apply antialiased;
 }
 
-.prose a {
-  @apply text-sky-700 underline decoration-sky-400 decoration-2 underline-offset-2 transition-colors duration-200 hover:text-sky-900;
-}
-
 @layer base {
   body {
     @apply font-sans;
