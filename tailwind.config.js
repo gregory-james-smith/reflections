@@ -1,30 +1,3 @@
-// module.exports = {
-//   content: [
-//     './_includes/**/*.html',
-//     './_layouts/**/*.html',
-//     './_posts/**/*.md',
-//     './docs/**/*.md',
-//     './*.html'
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         brand: {
-//           50: '#f3f8ff',
-//           100: '#dceeff',
-//           500: '#2f6fed',
-//           700: '#1e4ea8',
-//           900: '#142f5f'
-//         }
-//       },
-//       fontFamily: {
-//         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
-//       }
-//     }
-//   },
-//   plugins: []
-// };
-
 module.exports = {
   darkMode: "class", // use light mode only
   content: [
@@ -47,19 +20,27 @@ module.exports = {
           "Arial",
           "sans-serif",
         ],
+        serif: [
+          'Alegreya',
+          'Georgia',
+          'Cambria',
+          '"Times New Roman"',
+          'Times',
+          'serif',
+        ],
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: "65ch",
-            lineHeight: "1.55",
-            h1: { fontWeight: "600", letterSpacing: "-0.01em" },
-            h2: { fontWeight: "600", letterSpacing: "-0.01em" },
-            h3: { fontWeight: "500" },
-            code: { fontSize: "0.9em" },
-          },
-        },
-      },
+    //   typography: {
+    //     DEFAULT: {
+    //       css: {
+    //         maxWidth: "65ch",
+    //         lineHeight: "1.55",
+    //         h1: { fontWeight: "600", letterSpacing: "-0.01em" },
+    //         h2: { fontWeight: "600", letterSpacing: "-0.01em" },
+    //         h3: { fontWeight: "500" },
+    //         code: { fontSize: "0.9em" },
+    //       },
+    //     },
+    //   },
       opacity: {
         88: "0.88",
         72: "0.72",
