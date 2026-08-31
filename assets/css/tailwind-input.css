@@ -61,4 +61,12 @@ body {
   .border-strong {
     @apply border-zinc-400 dark:border-zinc-500;
   }
+
+  .prose-zinc,
+  .prose-gray,
+  .prose-slate,
+  .prose-neutral,
+  .prose-stone {
+    --tw-prose-quotes: var(--tw-prose-body);
+  }
 }
