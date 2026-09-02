@@ -61,12 +61,56 @@ body {
   .border-strong {
     @apply border-zinc-400 dark:border-zinc-500;
   }
+}
 
+@layer components {
   .prose-zinc,
   .prose-gray,
   .prose-slate,
   .prose-neutral,
   .prose-stone {
     --tw-prose-quotes: var(--tw-prose-body);
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    @apply font-semibold tracking-tight;
+  }
+
+  .prose h1 strong,
+  .prose h2 strong,
+  .prose h3 strong {
+    @apply font-extrabold;
+  }
+
+  .prose h2 {
+    font-size: 1.57142857em; /* 22px at prose-sm */
+  }
+
+  .prose blockquote {
+    @apply font-serif font-normal not-italic;
+  }
+
+  .prose blockquote > p::before,
+  .prose blockquote > p::after {
+    content: none;
+  }
+
+  .prose blockquote strong em,
+  .prose blockquote em strong {
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: lowercase;
+  }
+
+  .prose :not(pre) > code {
+    @apply bg-zinc-500/10 rounded-md p-1 py-0.5 text-zinc-700 font-normal;
+  }
+
+  .prose :not(pre) > code::before,
+  .prose :not(pre) > code::after {
+    content: none;
   }
 }

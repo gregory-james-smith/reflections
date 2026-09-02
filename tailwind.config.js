@@ -21,31 +21,31 @@ module.exports = {
           "sans-serif",
         ],
         serif: [
-          'Alegreya',
-          'Georgia',
-          'Cambria',
+          "Alegreya",
+          "Georgia",
+          "Cambria",
           '"Times New Roman"',
-          'Times',
-          'serif',
+          "Times",
+          "serif",
         ],
       },
-    //   typography: {
-    //     DEFAULT: {
-    //       css: {
-    //         maxWidth: "65ch",
-    //         lineHeight: "1.55",
-    //         h1: { fontWeight: "600", letterSpacing: "-0.01em" },
-    //         h2: { fontWeight: "600", letterSpacing: "-0.01em" },
-    //         h3: { fontWeight: "500" },
-    //         code: { fontSize: "0.9em" },
-    //       },
-    //     },
-    //   },
       opacity: {
         88: "0.88",
         72: "0.72",
         56: "0.56",
       },
+      //   typography: {
+      //     DEFAULT: {
+      //       css: {
+      //         maxWidth: "65ch",
+      //         lineHeight: "1.55",
+      //         h1: { fontWeight: "600", letterSpacing: "-0.01em" },
+      //         h2: { fontWeight: "600", letterSpacing: "-0.01em" },
+      //         h3: { fontWeight: "500" },
+      //         code: { fontSize: "0.9em" },
+      //       },
+      //     },
+      //   },
     },
   },
   plugins: [require("@tailwindcss/typography")],
