@@ -41,18 +41,8 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-pandoc
 
 markdown: Pandoc
-
-pandoc:
-  enable: true
-  filters:
-    - ./shift-headings.lua
-    - ./shift-headings-json-filter.py
-  options:
-    - "--base-header-level=2"
-    - "--mathjax"
 
 exclude:
   - node_modules/
