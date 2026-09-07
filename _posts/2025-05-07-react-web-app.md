@@ -55,6 +55,7 @@ There may be other parts than those illustrated here.
 | `button.reducer.ts` | React reducers specific to the feature of component |
 | `button.constants.ts` | Constant values specific to the feature of component |
 | `button.modules.css` | CSS module |
+| `__tests__/button.test.ts` | Unit tests |
 
 # State
 

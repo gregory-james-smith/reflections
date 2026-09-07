@@ -7,3 +7,5 @@ title: Technical References For Software Engineers
 * [Tailwind CSS documentation](https://tailwindcss.com/docs/font-family)
 * [MDN Javascript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 * [Lorem Ipsum generator](https://www.lipsum.com/)
+
+https://anydice.com/
