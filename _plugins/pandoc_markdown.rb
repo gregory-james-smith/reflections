@@ -17,7 +17,7 @@ module Jekyll
 
         args = [
           "pandoc",
-          "--from=markdown",
+          "--from=markdown+mark",
           "--to=html5",
           "--shift-heading-level-by=1"
         ]
