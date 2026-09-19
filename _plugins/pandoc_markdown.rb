@@ -19,8 +19,7 @@ module Jekyll
           "pandoc",
           "--from=markdown+mark+tex_math_dollars",
           "--to=html5",
-          "--shift-heading-level-by=1",
-          "--math-method=mathjax"
+          "--shift-heading-level-by=1"
         ]
 
         stdout, stderr, status = Open3.capture3(*args, stdin_data: content)
