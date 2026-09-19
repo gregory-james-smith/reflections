@@ -61,6 +61,14 @@ body {
   .border-strong {
     @apply border-zinc-400 dark:border-zinc-500;
   }
+
+  .small-caps {
+    font-variant-caps: all-small-caps;
+    /* font-weight: 500; */
+    font-style: normal;
+    text-transform: lowercase;
+    color: var(--tw-prose-body);
+  }
 }
 
 @layer components {
@@ -72,20 +80,48 @@ body {
     --tw-prose-quotes: var(--tw-prose-body);
   }
 
-  .prose h1,
+  /* .prose h1,
   .prose h2,
   .prose h3 {
     @apply font-semibold tracking-tight;
-  }
+  } */
 
   .prose h1 strong,
   .prose h2 strong,
   .prose h3 strong {
-    @apply font-extrabold;
+    @apply font-semibold;
+  }
+
+  .prose h1 {
+    @apply font-light tracking-tighter;
+    font-size: 4.14285714em; /* 58px at prose-sm */
   }
 
   .prose h2 {
-    font-size: 1.71428571em; /* 24px at prose-sm */
+    @apply font-normal tracking-tight;
+    /* font-size: 1.71428571em; 24px at prose-sm */
+    font-size: 1.85714286em; /* 26px at prose-sm */
+  }
+
+  .prose h3 {
+    @apply font-normal tracking-tight;
+  }
+
+  .prose h4 {
+    @apply font-normal;
+  }
+
+  .prose h5 {
+    @apply font-normal;
+  }
+
+  .prose h6 {
+    @apply font-normal;
+  }
+
+  .prose strong em,
+  .prose em strong {
+    @apply small-caps;
   }
 
   .prose blockquote {
