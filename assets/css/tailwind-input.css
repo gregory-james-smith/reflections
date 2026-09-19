@@ -159,4 +159,18 @@ body {
   .prose :not(pre) > code::after {
     content: none;
   }
+
+  /* Links */
+
+  .prose a {
+    @apply text-sky-600 underline-offset-2;
+  }
+
+  .prose a.footnote-ref {
+    text-decoration: none;
+  }
+
+  .prose a.footnote-back {
+    text-decoration: none;
+  }
 }
