@@ -16,11 +16,6 @@ body {
   }
 }
 
-/* 
- * Use opacity in light mode
- * Use solid colours in dark mode
- */
-
 @layer utilities {
   .text-color-primary {
     @apply text-black dark:text-white;
@@ -95,8 +90,9 @@ body {
   /* Headings */
 
   .prose h1 {
-    font-size: 4.14285714em; /* 58px at prose-sm */
-    @apply font-light tracking-tighter;
+    font-size: 3em; /* 42px at prose-sm */
+    font-weight: 400;
+    @apply tracking-tighter;
   }
 
   .prose h1 strong {
@@ -105,7 +101,8 @@ body {
 
   .prose h2 {
     font-size: 1.85714286em; /* 26px at prose-sm */
-    @apply font-normal tracking-tight;
+    font-weight: 300;
+    @apply tracking-tight;
   }
 
   .prose h2 strong {
@@ -113,7 +110,8 @@ body {
   }
 
   .prose h3 {
-    @apply font-normal tracking-tight;
+    font-size: 1.42857143em; /* 20px at prose-sm */
+    font-weight: 350;
   }
 
   .prose h3 strong {
@@ -121,7 +119,7 @@ body {
   }
 
   .prose h4 {
-    @apply font-normal;
+    @apply font-normal italic;
   }
 
   .prose h5 {
