@@ -90,7 +90,7 @@ body {
   /* Headings */
 
   .prose h1 {
-    font-size: 3em; /* 42px at prose-sm */
+    font-size: 2.5em; /* 35px at prose-sm */
     font-weight: 300;
     @apply tracking-tighter;
   }
@@ -101,17 +101,18 @@ body {
 
   .prose h2 {
     font-size: 1.85714286em; /* 26px at prose-sm */
-    font-weight: 350;
+    font-weight: 325;
     @apply tracking-tight;
   }
 
   .prose h2 strong {
-    font-weight: 550;
+    font-weight: 525;
   }
 
   .prose h3 {
     font-size: 1.42857143em; /* 20px at prose-sm */
     font-weight: 350;
+    @apply tracking-tight;
   }
 
   .prose h3 strong {
