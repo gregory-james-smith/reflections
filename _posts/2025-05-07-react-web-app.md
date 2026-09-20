@@ -14,24 +14,30 @@ The implementation is a **Single Page Application (SPA)**.
 This approach retrieves a single basic HTML page from the web server and, using the React framework and JavaScript, builds and dynamically updates the HTML content when the page loads and as the user interacts with it.
 This uses the technique of **client side rendering** as opposed to the alternative of **server side rendering**.
 
+<!-- Add example HTML file and JS file with React code -->
+
 Refreshing the page or calling the web server for different HTML pages is unnecessary.
 Multiple URL routes of the application are actually handled by a single HTML page hosted at the URL root.
 
+<!-- Example URL routes -->
+
 The implementation can support advanced features of a **Progressive Web Application (PWA)**.
+
+<!-- List of features -->
 
 ## Technical stack
 
 The Facebook technical stack is recommended.
 [This article by Facebook](https://engineering.fb.com/2020/05/08/web/facebook-redesign/) discusses the reasoning behind some of their technology choices.
 
-| Tool | Description |
-|-|-|
-| commitizen | Release management tool |
-| pnpm | Package manager |
-| Vite | Build tool |
-| Typescript | Programming language |
-| React | Web application framework |
-| Tailwind | CSS styling framework |
+| Tool       | Description               |
+|------------|---------------------------|
+| commitizen | Release management tool   |
+| pnpm       | Package manager           |
+| Vite       | Build tool                |
+| Typescript | Programming language      |
+| React      | Web application framework |
+| Tailwind   | CSS styling framework     |
 
 * Installing fonts
 * Images... SVG
@@ -58,14 +64,14 @@ Each component should have its own folder.
 Its parts should be broken down into different files with the following "dot" naming convention.
 There may be other parts than those illustrated here.
 
-| Filename | Description |
-|-|-|
-| `button.tsx` | The React component |
-| `button.hooks.ts` | React hooks for the component |
-| `button.reducer.ts` | React reducers for the component |
-| `button.constants.ts` | Constant values for the component |
-| `button.modules.css` | CSS module for the component |
-| `__tests__/button.test.ts` | Unit tests for the component |
+| Filename                   | Description                       |
+|----------------------------|-----------------------------------|
+| `button.tsx`               | The React component               |
+| `button.hooks.ts`          | React hooks for the component     |
+| `button.reducer.ts`        | React reducers for the component  |
+| `button.constants.ts`      | Constant values for the component |
+| `button.modules.css`       | CSS module for the component      |
+| `__tests__/button.test.ts` | Unit tests for the component      |
 
 ## Configuration
 
@@ -105,16 +111,18 @@ Use **Vite** to generate the web application.
 
 ## State
 
-| State | Description |
-|-|-|
-| React hook | |
-| React reducer | |
-| React context | |
-| URL parameters | |
-| Cookies | |
-| Session storage | |
-| Local storage | |
-| IndexedDB | |
+The reason for using React is to handle state and to automatically handle which parts of the application should render when state changes.
+
+| State           | Description |
+|-----------------|-------------|
+| React hook      |             |
+| React reducer   |             |
+| React context   |             |
+| URL parameters  |             |
+| Cookies         |             |
+| Session storage |             |
+| Local storage   |             |
+| IndexedDB       |             |
 
 ## React components
 
@@ -122,14 +130,19 @@ Components should be written as React functional components.
 
 ## Validation
 
-...
+* Responses from API calls
+* URL parameters
+* Configuration loaded from scripts
+* Data from session storage or local storage
+
+Use zod.
 
 # Testing
 
-| Tool | Description |
-|-|-|
-| Vitest | Unit test framework |
-| Lighthouse | Non-function test tool |
+| Tool               | Description              |
+|--------------------|--------------------------|
+| Vitest             | Unit test framework      |
+| Lighthouse         | Non-function test tool   |
 | Cypress & Cucumber | Behaviour test framework |
 
 It is customary to co-locate the unit tests in `./__test__` next to the code it is testing.
@@ -160,3 +173,9 @@ Self hosting this way prevents late loading of the fonts on the page.
 Use SVG for icons.
 
 # Web assemply and WASM
+
+# Deep linking and rison
+
+# Design goals
+
+* Deeply linked
