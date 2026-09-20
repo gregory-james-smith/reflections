@@ -1,23 +1,25 @@
 ---
 layout: post
-title: Web application guide with React
+title: Developing web applications
 tags: web
 ---
 
 This is my recommendation for how to develop a **web application**.
 
-I also recommend **MDN Web Docs** for a source of documentation.
+# Design
 
-# Conceptual design
+## Conceptual design
 
-The implementation is a **Single Page Application (SPA)** that loads a single HTML page and, using the React framework and JavaScript, dynamically updates the content as the user interacts with it without refreshing the entire page.
-The implementation can also support advanced features of a **Progressive Web Application (PWA)**.
+The implementation is a **Single Page Application (SPA)**.
+This approach retrieves a single basic HTML page from the web server and, using the React framework and JavaScript, builds and dynamically updates the HTML content when the page loads and as the user interacts with it.
+This uses the technique of **client side rendering** as opposed to the alternative of **server side rendering**.
 
-# Getting started
+Refreshing the page or calling the web server for different HTML pages is unnecessary.
+Multiple URL routes of the application are actually handled by a single HTML page hosted at the URL root.
 
-Use **Vite** to initialise the web application.
+The implementation can support advanced features of a **Progressive Web Application (PWA)**.
 
-# Technical stack
+## Technical stack
 
 The Facebook technical stack is recommended.
 [This article by Facebook](https://engineering.fb.com/2020/05/08/web/facebook-redesign/) discusses the reasoning behind some of their technology choices.
@@ -29,35 +31,79 @@ The Facebook technical stack is recommended.
 | Vite | Build tool |
 | Typescript | Programming language |
 | React | Web application framework |
-| Tailwind | CSS framework |
+| Tailwind | CSS styling framework |
 
-# Structure
+* Installing fonts
+* Images... SVG
 
-The project should be **structured by feature** not by type or by function.
-In user interfaces this means the primary structure is around the **pages** of the user interface.
+## Project structure
+
+The project should be **structured by feature** not by **structured by type**.
 
 | Folder | Description |
 |-|-|
-| `./src/pages/` | The pages of the web app |
-| `./src/features/` | Smart UI components coupled to the domain or implementation |
-| `./src/components/` | Dumb UI components decoupled from the domain and implementation. <br /> These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
+| `./src/pages/` | The pages of the web application |
+| `./src/features/` | Components which are tightly coupled to the domain or implementation |
+| `./src/components/` | Components decoupled from the domain and implementation. These components could be considered to be "dumb". <br /> These should really be in a separate library so they can be shared but for expediency or other reasons are held here. |
 | `./src/utils/` | Utilities |
 | `./src/api/` | Functions for making API calls |
 
-Each component or feature should have its own folder.
+In user interfaces this means the primary structure is around the **pages** of the user interface.
+
+`react-router`
+
+## React components
+
+Each component should have its own folder.
 Its parts should be broken down into different files with the following "dot" naming convention.
 There may be other parts than those illustrated here.
 
 | Filename | Description |
 |-|-|
-| `button.tsx` | The feature or component |
-| `button.hooks.ts` | React hooks specific to the feature or component |
-| `button.reducer.ts` | React reducers specific to the feature of component |
-| `button.constants.ts` | Constant values specific to the feature of component |
-| `button.modules.css` | CSS module |
-| `__tests__/button.test.ts` | Unit tests |
+| `button.tsx` | The React component |
+| `button.hooks.ts` | React hooks for the component |
+| `button.reducer.ts` | React reducers for the component |
+| `button.constants.ts` | Constant values for the component |
+| `button.modules.css` | CSS module for the component |
+| `__tests__/button.test.ts` | Unit tests for the component |
 
-# State
+## Configuration
+
+Host a small Javascript file on the same web server as the web application.
+
+```js
+window.config = {
+  data: 1
+}
+```
+
+Add code to the head of the HTML document to run the Javascript file.
+
+```html
+<html>
+  <head>
+    <script src="/env/config.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+The application source code can then access the configuration data.
+
+```ts
+const data = window.config?.data;
+```
+
+This can cause problems so it is best to hold the configuration inside a React context.
+
+# Programming
+
+## Getting started
+
+Use **Vite** to generate the web application.
+
+## State
 
 | State | Description |
 |-|-|
@@ -70,33 +116,13 @@ There may be other parts than those illustrated here.
 | Local storage | |
 | IndexedDB | |
 
-# Configuration
+## React components
 
-Host a small Javascript file on the same web server as the web application.
+Components should be written as React functional components.
 
-```js
-window.config = {
-  data: 1
-}
-```
+## Validation
 
-Add the code to the head of the HTML document to run the Javascript file.
-
-```html
-<html>
-  <head>
-    <script src="/env/config.js"></script>
-  </head>
-  <body>
-  </body>
-</html>
-```
-
-The source code can then access the configuration data.
-
-```ts
-const data = window.config?.data;
-```
+...
 
 # Testing
 
@@ -132,3 +158,5 @@ They can be installed with the `@fontsource` packages.
 Self hosting this way prevents late loading of the fonts on the page.
 
 Use SVG for icons.
+
+# Web assemply and WASM
