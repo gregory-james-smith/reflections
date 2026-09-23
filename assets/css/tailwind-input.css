@@ -90,9 +90,8 @@ body {
   /* Headings */
 
   .prose h1 {
-    font-size: 2.5em; /* 35px at prose-sm */
-    font-weight: 300;
-    @apply tracking-tighter;
+    font-weight: 600;
+    @apply tracking-tighter text-[3.5em] md:text-[4.5em] lg:text-[5.5em];
   }
 
   .prose h1 strong {
