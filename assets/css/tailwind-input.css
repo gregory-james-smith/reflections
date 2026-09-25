@@ -91,7 +91,7 @@ body {
 
   .prose h1 {
     font-weight: 600;
-    @apply tracking-tighter text-[3.5em] md:text-[4.5em] lg:text-[5.5em];
+    @apply tracking-[-.04em] leading-[1.1] text-[3.5em] md:text-[4.5em] lg:text-[5.5em];
   }
 
   .prose h1 strong {
