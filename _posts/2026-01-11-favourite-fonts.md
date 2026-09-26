@@ -3,13 +3,18 @@ layout: post
 title: Favourite fonts
 ---
 
-# Abstract
+This is a list of my favourite fonts:
 
-| Typeface | | |
-|-|-|-|
-| Inter | Variable | |
-| Alegreya | | |
-
+- [Inter](https://rsms.me/inter/)
+- [Plain](https://optimo.ch/typefaces/plain1) by Optimo
+- [Geist](https://vercel.com/font)
+- Helvetica Neue
+- [Cormorant](https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family)
+- Garamond EB
+- [Alegreya](https://fonts.google.com/specimen/Alegreya)
+- [Requiem](https://www.typography.com/fonts/requiem/overview)
+- [Iosevka](https://github.com/be5invis/Iosevka) and [Iosevka Charon](https://fonts.google.com/specimen/Iosevka+Charon)
+- [Hack](https://github.com/source-foundry/Hack)
 
 # Sans serif
 
@@ -30,7 +35,12 @@ title: Favourite fonts
 
 # Monospace fonts for code
 
-* [Iosevka](https://github.com/be5invis/Iosevka) and [Iosevka Charon](https://fonts.google.com/specimen/Iosevka+Charon)
-* [Hack](https://github.com/source-foundry/Hack)
+- [Iosevka](https://github.com/be5invis/Iosevka) and [Iosevka Charon](https://fonts.google.com/specimen/Iosevka+Charon)
+- [Hack](https://github.com/source-foundry/Hack)
 
 # Blackletter
+
+# Special
+
+- Noto
+- Nerd font
