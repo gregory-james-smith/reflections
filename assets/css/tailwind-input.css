@@ -95,12 +95,12 @@ body {
   }
 
   .prose h1 strong {
-    font-weight: 500;
+    font-weight: 800;
   }
 
   .prose h2 {
     font-size: 1.85714286em; /* 26px at prose-sm */
-    font-weight: 325;
+    font-weight: 300;
     @apply tracking-tight;
   }
 
