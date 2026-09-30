@@ -6,7 +6,8 @@ title: Favourite fonts
 [Inter](https://rsms.me/inter/)
 • [Plain](https://optimo.ch/typefaces/plain1)
 • [Geist](https://vercel.com/font)
-• Helvetica Neue
+• Helvetica Now Variable
+• San Fransisco
 • Garamond EB
 • [Cormorant](https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family)
 • Palatino
@@ -22,8 +23,6 @@ title: Favourite fonts
 Old style typefaces originate in 15th century Renaissance Venice from a combination of Italian calligraphy and Roman inscriptional capitals.
 It is characterised by moderate line contrast, calligraphic stroke modulation, and an even page colour.
 The style is restrained, quiet and harmonious.
-
-
 
 |                     | EB Garamond                                                                               | Cormorant                                                                                 | Goudy Initialen                                                                               |
 |---------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -60,7 +59,6 @@ As of now, the project is effectively in a stable but dormant state.
 Historically, it is anachronistic to use bold for emphasis in old style type.
 Bold types were not created until the 19th century and the original old types of Garamond had no bold weights.
 Introducing a 19th-century convention into a 16th-century design disrupts the aesthetics.
-Old style is characterised by moderate contrast, calligraphic stroke modulation, and an even page colour.
 Using bold to increase contrast and add density appears heavy and jarring in Garamond rather than emphatic.
 Italics and small caps, *preserves* visual harmony by keeping colour and stoke contrast consistent, but provides emphasis by changing letterform character.
 
@@ -78,13 +76,13 @@ A weight of 500 is too heavy.
 
 Therefore I prefer to use the Duffner implementation of EB Garamond to take advantage of the 8pt and 12pt optical sizes and then apply the emphasis methods used at the time.
 
-| Method              | Notes                                                                                                           |
-|---------------------|-----------------------------------------------------------------------------------------------------------------|
-| Italics             | Primary emphasis mechanism. A separate style, not a slant.                                                      |
-| Small caps          | For initial emphasis, proper names, headings; per Bringhurst, the standard substitute for bold in oldstyle text |
-| All caps            | Strong emphasis or display                                                                                      |
-| Switching typefaces | For examples, dropping into blackletter or a different roman for a word or phrase                               |
-| Letter-spacing      | Widening the tracking of a word                                                                                 |
+| Method              | Notes                                                                             |
+|---------------------|-----------------------------------------------------------------------------------|
+| Italics             | Primary emphasis mechanism. A separate style, not a slant.                        |
+| Small caps          | For initial emphasis, proper names, headings                                      |
+| All caps            | Strong emphasis or display                                                        |
+| Switching typefaces | For examples, dropping into blackletter or a different roman for a word or phrase |
+| Letter-spacing      | Widening the tracking of a word                                                   |
 Table: The emphasis methods available to a 16th-century printer
 
 Traditional Garamond cuts appear blotted and unsophisticated at sizes needed for headings and titles.
@@ -94,31 +92,6 @@ Conversely because Cormorant has a single optical size, its fine features nearly
 
 While EB Garamond comes with decorative initials, the initials of Goudy Initialen are preffered.
 Initially designed by Frederic W. Goudy in the early 1900s as Cloister Initials.
-They are acknowledged as some of the most beautifully designed of initials ever created inspired by letter from Medieval manuscripts.
+They are acknowledged as some of the most beautifully designed of initials ever created inspired by letters from Medieval manuscripts.
 
-![Example of EB Garamond body text with Cormorant title and Goudy Initialen dropped capital]({{ '/assets/images/Old%20style%20sample.png' | relative_url }})
-
-# Sans serif
-
-- [Inter](https://rsms.me/inter/)
-- [Plain](https://optimo.ch/typefaces/plain1) by Optimo
-- [Geist](https://vercel.com/font)
-- Helvetica Neue
-
-# Serif fonts for prose
-
-- [Alegreya](https://fonts.google.com/specimen/Alegreya)
-- [Requiem](https://www.typography.com/fonts/requiem/overview) by Hoefler & Co.
-
-# Monospace fonts for code
-
-- [Iosevka](https://github.com/be5invis/Iosevka) and [Iosevka Charon](https://fonts.google.com/specimen/Iosevka+Charon)
-- [Hack](https://github.com/source-foundry/Hack)
-
-# Blackletter
-
-# Special
-
-- Noto
-- Nerd font
-- Zapfino
+![Example of EB Garamond body text with Cormorant title and Goudy Initialen dropped capital]({{ '/assets/images/old-style-sample.png' | relative_url }})
