@@ -202,4 +202,11 @@ body {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
   }
+
+  /* Table */
+
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
 }
