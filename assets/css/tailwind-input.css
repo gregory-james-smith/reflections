@@ -179,4 +179,12 @@ body {
   .prose a.footnote-back {
     text-decoration: none;
   }
+
+  /* Table */
+
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
+
 }
