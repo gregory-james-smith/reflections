@@ -206,7 +206,15 @@ body {
   /* Table */
 
   .prose table {
-    display: block;
+    width: auto !important;
+    /* display: block;
     overflow-x: auto;
+    margin-right: -2rem;
+    padding-right: 2rem;
+    margin-left: -2rem;
+    padding-left: 2rem; */
+    @apply w-[calc(100%+4rem)] overflow-x-auto -mx-8 px-8 md:w-full md:mx-0 md:px-0;
+    /* @apply w-[calc(100%+4rem)] block overflow-x-auto -mx-8 px-8 md:w-full md:table md:mx-0 md:px-0; */
+    /* @apply w-[calc(100%+4rem)] block overflow-x-auto -mx-8 px-8 md:w-full; */
   }
 }
