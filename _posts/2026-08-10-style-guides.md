@@ -3,7 +3,9 @@ layout: post
 title: Design style guides
 ---
 
-* [IBM style guide](http://cdncms.fonts.net/documents/10c899d090edbc03/IBM_Font_Guidelines.pdf)
+# Corporate design guides
+
+* [IBM graphic design guide](https://www.paulrand.design/life/books-articles/books/2018-ibm-graphic-standards-manual-reprint.html) 1969-1987 by Paul Rand
 
 # The Federal Graphics Improvement Program
 
