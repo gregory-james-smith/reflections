@@ -91,7 +91,7 @@ body {
 
   .prose h1 {
     font-weight: 600;
-    @apply tracking-[-.04em] leading-[1.1] text-[3.5em] md:text-[4.5em] lg:text-[5.5em];
+    @apply tracking-[-.04em] leading-[1.1] text-[4.5em] md:text-[5.5em];
   }
 
   .prose h1 strong {
@@ -101,7 +101,7 @@ body {
   .prose h2 {
     font-size: 1.85714286em; /* 26px at prose-sm */
     font-weight: 300;
-    @apply tracking-tight;
+    @apply tracking-tight border-subtle border-b pb-1.5;
   }
 
   .prose h2 strong {
@@ -164,6 +164,12 @@ body {
   .prose :not(pre) > code::before,
   .prose :not(pre) > code::after {
     content: none;
+  }
+
+  /* Highlight */
+
+  .prose mark {
+    @apply bg-yellow-200/50 dark:bg-yellow-400/20 rounded-md px-1 py-0.5 text-yellow-800 dark:text-yellow-200;
   }
 
   /* Links */
