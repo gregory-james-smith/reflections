@@ -189,17 +189,37 @@ body {
   /* Images */
 
   .gallery {
+    --gallery-gap: 0.75rem;
+    --gallery-columns: 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-    margin: 1.5rem 0;
+    grid-template-columns: repeat(var(--gallery-columns), minmax(0, 1fr));
+    gap: var(--gallery-gap);
+    justify-items: center;
+    align-items: start;
+    margin: 1.5rem auto;
   }
 
-  .gallery img {
+  .gallery > figure {
+    width: 100%;
+    margin: 0;
+  }
+
+  .gallery > figure > img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 0.25rem;
+  }
+
+  .gallery > figure > figcaption {
+    margin-bottom: 0.5rem;
+  }
+
+  @supports (grid-template-rows: masonry) {
+    .gallery {
+      grid-template-rows: masonry;
+    }
   }
 
   .margin-figure {
