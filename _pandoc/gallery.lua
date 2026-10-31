@@ -3,6 +3,10 @@
 -- This filter detects paragraphs that contain only images and
 -- converts them into div with a gallery class
 
+if not FORMAT or not FORMAT:match('^html') then
+  return
+end
+
 local function escape_html(value)
   local text = tostring(value or '')
   return text
