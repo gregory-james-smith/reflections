@@ -57,6 +57,18 @@ body {
     @apply border-zinc-400 dark:border-zinc-500;
   }
 
+  /*
+   * Small caps
+   * 
+   * Set weight to 500 for small caps to match the 
+   * weight of normal text at 400. This is because 
+   * Inter does not have a small caps variant, so 
+   * the browser will synthesize small caps by scaling
+   * down the uppercase letters. This makes them appear
+   * lighter than normal text, so we increase the 
+   * weight to compensate.
+   */
+
   .small-caps {
     font-variant-caps: small-caps;
     font-style: normal;
@@ -116,9 +128,6 @@ body {
 
   .prose h3 strong {
     font-weight: 550;
-  }
-
-  .prose h4 {
   }
 
   /* Default h5 and h6 to h4 */
