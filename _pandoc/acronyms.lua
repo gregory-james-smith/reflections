@@ -42,6 +42,10 @@ local function render_abbr(term)
     suffix = match_suffix
   end
 
+  if base == '' or base ~= base:upper() then
+    return nil
+  end
+
   local key = normalize_key(base)
   local definition = definitions[key]
 
