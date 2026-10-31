@@ -1,3 +1,8 @@
+-- Gallery filter for Pandoc
+--
+-- This filter detects paragraphs that contain only images and
+-- converts them into div with a gallery class
+
 local function escape_html(value)
   local text = tostring(value or '')
   return text
@@ -54,4 +59,3 @@ function Para(para)
   table.insert(html, '</div>')
   return pandoc.RawBlock('html', table.concat(html, '\n'))
 end
-
