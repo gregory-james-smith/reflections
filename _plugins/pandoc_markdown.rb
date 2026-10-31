@@ -22,7 +22,7 @@ module Jekyll
 
         args = [
           "pandoc",
-          "--from=markdown+mark+tex_math_dollars",
+          "--from=markdown+mark+tex_math_dollars+abbreviations",
           "--to=html5",
           "--shift-heading-level-by=1"
         ] + filter_args
