@@ -5,6 +5,10 @@
 --
 -- The first occurrence of the acronym is wrapped in <abbr> with the definition.
 
+if not FORMAT or not FORMAT:match('^html') then
+  return
+end
+
 local definitions = {}
 local seen = {}
 
